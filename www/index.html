@@ -39,16 +39,28 @@
     <body>
         <div class="pag" id="index" data-role="page" data-theme="a">
             <div data-role="header" id="header" data-position="fixed">
-                <h1>Ejercicio Hora</h1>
+                <h1>Ejercicio Conexión</h1>
             </div>
             <div role="main" class="ui-content">
                <form action="" id="formulario" method="get" onsubmit="return false;" >
                     <label for="url">Introduce URL:</label>
                     <input type="url" name="url" step="any" id="url" value="http://" required>
-                    <input type="submit" value="Testear" id="calcular" data-theme="b" data-icon="carat-r" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-right" onclick="checkConnection();">
+                    <input type="submit" value="Probar Conexion" id="calcular" data-theme="b" data-icon="carat-r" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-right" onclick="checkConnection();">
+                </form>
+            </div>
+        </div>  
+        <div class="pag" id="resultado" data-role="page" data-theme="e">
+            <div data-role="header" id="header" data-position="fixed">
+                <h1>Ejercicio Conexión</h1>
+            </div>
+            <div role="main" class="ui-content">
+               <form action="" id="regresar" method="get" onsubmit="return false;" >
+                    <label>Conexion:</label>
+                    <div id="testC"></div>
+                    <input type="submit" value="Regresar" id="calcular" data-theme="b" data-icon="carat-r" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-right" onclick="Regresar();">
                 </form>
                 <div id="testC"></div>
             </div>
-        </div>       
+        </div>      
     </body>
 </html>

@@ -11,4 +11,11 @@ function checkConnection() {
 	states[Connection.NONE] = 'No network connection';
 	var txt = "<p>Tipo de conexi&oacuten: "+states[networkState]+"</p>";
 	$("#testC").html(txt);
+	$.mobile.changepage("#resultado")
+}
+
+function Regresar() {
+	
+	$("#testC").html("");
+	$.mobile.changepage("#index");
 }
