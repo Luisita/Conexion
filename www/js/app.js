@@ -11,5 +11,5 @@ function checkConnection() {
 	states[Connection.CELL_4G] = 'Cell 4G connection';
 	states[Connection.NONE] = 'No network connection';
 	var txt = "<p>Tipo de conexi&oacuten: "+states[networkState]+"</p>";
-	$.mobile.changepPage("#tipo")
+	$.mobile.changePage("#tipo")
 }
