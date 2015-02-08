@@ -37,29 +37,28 @@
         <title>Eventos</title>
     </head>
     <body>
-        <div class="pag" id="index" data-role="page" data-theme="a">
+        <div id="index" data-role="page">
             <div data-role="header" id="header" data-position="fixed">
                 <h1>Ejercicio Conexión</h1>
             </div>
             <div role="main" class="ui-content">
-               <form action="" id="formulario">
+               <form id="formulario">
                     <label for="url">Introduce URL:</label>
                     <input type="url" name="url" step="any" id="url" value="http://" required>
                     <input type="submit" value="Probar Conexion"/>
                 </form>
             </div>
         </div>  
-        <div class="pag" id="resultado" data-role="page" data-theme="e">
+        <div id="resultado" data-role="page">
             <div data-role="header" id="header" data-position="fixed">
                 <h1>Tipo Conexion</h1>
             </div>
             <div role="main" class="ui-content">
-               <form action="" id="regresar">
+               <form  id="regresar">
                     <label>Conexion tipo :</label>
                     <b><input text="text" name="tipo" id="tipo" readonly/></b><span>
                     <input type="submit" value="Regresar"/>
                 </form>
-                <div id="testC"></div>
             </div>
         </div>      
     </body>

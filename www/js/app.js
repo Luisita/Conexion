@@ -1,8 +1,8 @@
 // función para probar la conectividad
 $('#formulario').submit(function() {
 	
-	texto = checkConnection();
-	$("#tipo").val(texto);
+	//texto = checkConnection();
+	$("#tipo").val("Hola");
 	$.mobile.changepage("#resultado")
 });
 
