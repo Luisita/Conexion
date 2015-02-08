@@ -41,24 +41,13 @@
             <div data-role="header" id="header" data-position="fixed">
                 <h1>Ejercicio Conexión</h1>
             </div>
-            <div role="main" class="ui-content">
-               <form id="formulario">
-                    <label for="url">Introduce URL:</label>
-                    <input type="url" name="url" step="any" id="url" value="http://" required>
-                    <input type="submit" value="Probar Conexion"/>
+            <div id="Connection" class="ui-content">
+                <form action="" id="formulario" method="get" onsubmit="return false;" >
+                <label for="url">Introduce URL:</label>
+                <input type="url" name="url" step="any" id="url" value="http://" required>
+                <input type="submit" value="Testear" id="calcular" data-theme="b" data-icon="carat-r" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-right" onclick="checkConnection();">
                 </form>
-            </div>
-        </div>  
-        <div id="resultado" data-role="page">
-            <div data-role="header" id="header" data-position="fixed">
-                <h1>Tipo Conexion</h1>
-            </div>
-            <div role="main" class="ui-content">
-               <form  id="regresar">
-                    <label>Conexion tipo :</label>
-                    <b><input text="text" name="tipo" id="tipo" readonly/></b><span>
-                    <input type="submit" value="Regresar"/>
-                </form>
+                <div id="testC"></div>
             </div>
         </div>      
     </body>
