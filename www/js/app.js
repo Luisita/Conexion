@@ -10,12 +10,12 @@ function checkConnection() {
 	states[Connection.CELL_4G] = 'Cell 4G connection';
 	states[Connection.NONE] = 'No network connection';
 	var txt = "<p>Tipo de conexi&oacuten: "+states[networkState]+"</p>";
-	$("#testC").html(txt);
+	$("#tipo").html("Hola");
 	$.mobile.changePage("#resultado")
 }
 
 function Regresar() {
 	
-	$("#testC").html("");
+	$("#tipo").html("");
 	$.mobile.changepage("#index");
 }
