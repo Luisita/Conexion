@@ -37,46 +37,21 @@
         <title>Eventos</title>
     </head>
     <body>
-<div class="pag" id="index" data-role="page" data-theme="a">
-<div data-role="header" id="header" data-position="fixed">
-<img src="img/logo.png" id="logo" />
-</div>
-<div role="main" class="ui-content">
-<div data-role="tabs">
-<div data-role="navbar">
-<ul>
-<li><a href="#Connection" data-theme="a" data-ajax="false">Conex&oacuten</a></li>
-<li><a href="#Vibration" data-theme="a" data-ajax="false">Dialogos, Vibraci&oacuten y Beep</a></li>
-</ul>
-</div>
-<div id="Connection" class="ui-content">
-<form action="" id="formulario" method="get" onsubmit="return false;" >
-<label for="url">Introduce URL:</label>
-<input type="url" name="url" step="any" id="url" value="http://" required>
-<input type="submit" value="Testear" id="calcular" data-theme="b" data-icon="carat-r" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-right" onclick="checkConnection();">
-</form>
-<div id="testC"></div>
-</div>
-<div id="Vibration" class="ui-content">
-<h2>Selecciona opci&oacuten</h2>
-<ul data-role="listview" id="listaA">
-<li><a href="#" id="vibrar" onclick="vibrar();">
-<img src="img/beep.jpg"/>
-<h2>Vibrar</h2>
-<p>Vibrar el tel&eacutefono.</p>
-</a></li>
-<li><a href="#" id="beep" onclick="beep();">
-<img src="img/vibrar.png"/>
-<h2>Escuchar beep</h2>
-<p>Escuchar beep del tel&eacutefono.</p>
-</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="controles" data-role="footer" data-position="fixed">
-<h2>Novauniversitas</h2>
-</div>
-</div>
-</body>
+    <div class="pag" id="index" data-role="page" data-theme="a">
+        <div data-role="header" id="header" data-position="fixed">
+           <h1>Tipo de conexión</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <div data-role="tabs">
+                <div id="Connection" class="ui-content">
+                    <form action="" id="formulario" method="get" onsubmit="return false;" >
+                    <label for="url">Introduce URL:</label>
+                    <input type="url" name="url" step="any" id="url" placehorder="http://www.url.com" required>
+                    <input type="submit" value="Tipo de Conexión" id="calcular" data-theme="b" data-icon="carat-r" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-right" onclick="checkConnection();">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
